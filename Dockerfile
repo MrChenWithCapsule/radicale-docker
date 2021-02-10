@@ -8,4 +8,5 @@ RUN wget https://github.com/MrChenWithCapsule/radicale-dovecot-auth/archive/mast
     && rm -rf master.zip radicale-dovecot-auth-master
     
 USER radicale:radicale
+HEALTHCHECK NONE
 CMD ["/usr/bin/radicale"]
